@@ -9,7 +9,7 @@ common:
     s3_encrypt: true
     s3_secure: true
 
-    secret_key: _env:DOCKER_REGISTRY_SECRET_KEY
+    secret_key: _env:DOCKER_REGISTRY_SECRET
 
 # This is the default configuration when no flavor is specified
 dev:
