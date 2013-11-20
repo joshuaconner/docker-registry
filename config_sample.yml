@@ -8,12 +8,12 @@ common:
     s3_bucket: _env:DOCKER_REGISTRY_S3_BUCKET
     s3_encrypt: true
     s3_secure: true
-
     secret_key: _env:DOCKER_REGISTRY_SECRET
 
 # This is the default configuration when no flavor is specified
 dev:
     storage: s3
+    storage_path: /dev
     loglevel: debug
 
 # To specify another flavor, set the environment variable SETTINGS_FLAVOR
